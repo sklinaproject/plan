@@ -56,10 +56,11 @@ public class PLA001SVC extends ExecuteService<PLA00100Out>{
                 throw new RuntimeException("상품코드 필수입력");
             }
 
+            /*
             if(StringUtils.isEmpty(entAmt)) {
                 throw new RuntimeException("가입금액 필수입력");            
             }
-
+            */
            
             svcParam.put("prdcd", prdcd);
             svcParam.put("entAmt", entAmt);

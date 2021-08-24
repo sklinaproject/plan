@@ -41,7 +41,6 @@ public class PLA002SVC extends ExecuteService<PLA00200Out>{
         
         //설계저장
         if("savePlan".equalsIgnoreCase(svcFn)) {
-            //TODO
 
             String jsonStr= FwkUtils.toJson(param);
             System.out.println("\n##### PLA002SVC FwkUtils.toJson(param) : " + jsonStr + "\n");
@@ -50,8 +49,9 @@ public class PLA002SVC extends ExecuteService<PLA00200Out>{
 
             System.out.println("\n##### PLA002SVC planIn : " + planIn.toString() + "\n");
 
-            planPrcsBM.savePlan(planIn);
+            ppsdsnNo = planPrcsBM.savePlan(planIn);
 
+            out.setPpsdsnNo(ppsdsnNo);
         }
 
         //설계조회

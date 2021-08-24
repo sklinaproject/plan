@@ -31,7 +31,7 @@ public class PlanPrcsBM {
     private PublishEvent publishEvent;
 
     @Transactional
-    public int savePlan(PLA00200In in) {
+    public String savePlan(PLA00200In in) {
 
         PlanInfoVO planInfo = in.getPlanInfo();
 
@@ -73,7 +73,7 @@ public class PlanPrcsBM {
 
         publishEvent.publish(planInfo);
 
-        return 1;
+        return ppsdsnNo;
 
     }
 }

@@ -12,7 +12,7 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper=false)
 public class PLA00100Out extends DefaultDTO{
-    
+    String ppsdsnNo       ;   //가입설계번호
     String prdcd          ;    //상품코드
     String prdnm          ;    //상품명
     String custNo        ;    //고객번호
