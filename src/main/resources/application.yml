@@ -9,7 +9,7 @@ kafka:
 
 api:
   url:
-product: http://product:8080
+    product: http://product:8080
 ---
 
 spring:
